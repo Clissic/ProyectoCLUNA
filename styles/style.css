@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+.indexBody {
+    background-image: url("../img/club-naval-2.jpg");
+    background-size: cover;
+}
+
+.log-container {
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    width: 45vw;
+    height: 90vh;
+    border-radius: 20px;
+}
+
+.imgLogo {
+    width: 75%;
+    margin: 0 auto 10vh auto;
+}
+
+.inputClass {
+    padding-left: 15px;
+    margin: 0 auto 5vh auto;
+    width: 70%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(240, 240, 240);
+}
+
+.inputClass:focus {
+    border: solid 2px blue;
+    outline-width: 0;
+}
+
+.labelClass {
+    width: 70%;
+    margin: 0 auto 1vh auto;
+    font-size: small;
+}
+
+.forgotPswdBtn {
+    font-size: small;
+    width: 70%;
+    margin: -20px auto 5vh auto;
+    text-align: end;
+    font-weight: 600;
+}
+
+.submitLink {
+    text-align: center;
+    width: 100%;
+}
+
+.submitBtn {
+    width: 73%;
+    background-color: rgb(0, 0, 215);
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+    margin: 0 auto 5vh auto;
+    padding: 2vh 0 2vh 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.submitBtn:hover {
+    background-color: blue;
+    transition: .5s;
+}
+
+.submitBtn:active {
+    background-color: rgb(0, 0, 155);
+}
+
+.termsBtn, .privacyBtn {
+    color: darkblue;
+    font-weight: 600;
+    font-size: small;
+    width: 70%;
+    margin: 2vh auto 0 auto;
+    text-align: center;
+}
+
+/* USER INTERFACE */
+
+.interfaceBody {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-areas: "data act";
+    margin: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.personalData {
+    display: flex;
+    flex-direction: column;
+    grid-area: data;
+    padding: 2vw;
+    justify-content: space-evenly;
+    height: 80vh;
+    background-color: rgb(250, 250, 250);
+    border-radius: 15px 0 0 15px;
+}
+
+.personalDataPic {
+    width: 60%;
+    margin: 0 auto 20px auto;
+}
+
+.personalDataContainer {
+    padding-left: 2vw;
+    margin-bottom: 1vh;
+}
+
+.personalDataTitle {
+    font-weight: 600;
+    color: rgb(0, 0, 200);
+}
+
+.personalDataInfo {
+    font-size: large;
+}
+
+.modifyPersonalDataA {
+    width: 100%;
+    text-align: center;
+}
+
+.modifyPersonalData {
+    padding: 5px 10px 5px 10px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(220, 220, 220);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.modifyPersonalData:hover {
+    background-color: rgb(235, 235, 235);
+    transition: .5s;
+}
+
+.modifyPersonalData:active {
+    background-color: rgb(220, 220, 220);
+}
