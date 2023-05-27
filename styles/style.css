@@ -40,6 +40,7 @@ a:active {
     border: none;
     border-radius: 5px;
     background-color: rgb(240, 240, 240);
+    border: solid 2px rgb(240, 240, 240);
 }
 
 .inputClass:focus {
@@ -103,7 +104,10 @@ a:active {
 .interfaceBody {
     display: grid;
     grid-template-columns: 2fr 5fr;
-    grid-template-areas: "data act";
+    grid-template-rows: 2.5fr 10fr;
+    grid-template-areas: 
+    "data menu"
+    "data act";
     margin: 30px;
     border-radius: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -116,7 +120,7 @@ a:active {
     padding: 2vw;
     justify-content: space-evenly;
     height: 80vh;
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(240, 240, 240);
     border-radius: 15px 0 0 15px;
 }
 
@@ -131,34 +135,69 @@ a:active {
 }
 
 .personalDataTitle {
-    font-weight: 600;
-    color: rgb(0, 0, 200);
+    font-size: small;
 }
 
 .personalDataInfo {
+    font-weight: 600;
     font-size: large;
 }
 
 .modifyPersonalDataA {
-    width: 100%;
+    font-size: small;
+    text-align: end;
+    color: black;
+}
+
+.operationsMenu {
+    position: relative;
+    grid-area: menu;
     text-align: center;
+    background-color: rgb(245, 245, 245);
+    border-radius: 0 15px 0 0;
 }
 
-.modifyPersonalData {
-    padding: 5px 10px 5px 10px;
-    height: 25px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(220, 220, 220);
-    transition: .5s;
+.operationsMenuList {
+    width: 100%;
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+    margin: 5vh auto 5vh auto;
+    justify-content: space-evenly;
+}
+
+.operationsMenuListItem {
     cursor: pointer;
+    font-weight: 600;
+    padding: 2vh 4vw 2vh 4vw;
+    color: black;
+    border-bottom: solid 2px rgb(245, 245, 245);
 }
 
-.modifyPersonalData:hover {
-    background-color: rgb(235, 235, 235);
-    transition: .5s;
+.operationsMenuListItem:hover {
+    border-bottom: solid 2px rgb(0, 0, 200);
 }
 
-.modifyPersonalData:active {
-    background-color: rgb(220, 220, 220);
+.operationsMenuListItem:focus {
+    border-bottom: solid 2px rgb(0, 0, 200);
+}
+
+.personalDisplayArea {
+    grid-area: act;
+    background-image: url(../img/logo-club-naval1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.personalDisplayArea {
+    display: flex;
+    justify-content: end;
+}
+
+.welcomeMsg {
+    margin: 5vh auto;
+    width: 70%;
+    text-align: center;
+    font-style: italic;
+    color: rgb(215, 215, 215);
 }
