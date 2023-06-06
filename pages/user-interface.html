@@ -1,54 +1,164 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Club Naval - Autogestión de socio</title>
-    <link rel="stylesheet" href="../styles/style.css">
-</head>
-<body class="interfaceBody">
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body class="interfaceBody">
     <div class="personalData">
-        <img class="personalDataPic" src="../img/profilePic.png" alt="foto de perfil">
-        <div class="personalDataContainer">
-            <p class="personalDataTitle">Nombre:</p>
-            <p class="personalDataInfo">Nombre Apellido</p>
-        </div>
-        <div class="personalDataContainer">
-            <p class="personalDataTitle">C.I.:</p>
-            <p class="personalDataInfo">9.999.999-9</p>
-        </div>
-        <div class="personalDataContainer">
-            <p class="personalDataTitle">F/N:</p>
-            <p class="personalDataInfo">01/01/01</p>
-        </div>
-        <div class="personalDataContainer">
-            <p class="personalDataTitle">Email:</p>
-            <p class="personalDataInfo">usuario@email.com</p>
-        </div>
-        <div class="personalDataContainer">
-            <p class="personalDataTitle">Tipo de socio:</p>
-            <p class="personalDataInfo">Activo (CN)</p>
-        </div>
-        <div class="personalDataContainer">
-            <p class="personalDataTitle">Puntos:</p>
-            <p class="personalDataInfo">9999</p>
-        </div>
-        <a class="modifyPersonalDataA" href="../index.html">Modificar datos</a>
+      <img
+        class="personalDataPic"
+        src="../img/profilePic.png"
+        alt="foto de perfil"
+      />
+      <div class="personalDataContainer">
+        <p class="personalDataTitle">Nombre:</p>
+        <p class="personalDataInfo">Nombre Apellido</p>
+      </div>
+      <div class="personalDataContainer">
+        <p class="personalDataTitle">C.I.:</p>
+        <p class="personalDataInfo">9.999.999-9</p>
+      </div>
+      <div class="personalDataContainer">
+        <p class="personalDataTitle">F/N:</p>
+        <p class="personalDataInfo">01/01/01</p>
+      </div>
+      <div class="personalDataContainer">
+        <p class="personalDataTitle">Email:</p>
+        <p class="personalDataInfo">usuario@email.com</p>
+      </div>
+      <div class="personalDataContainer">
+        <p class="personalDataTitle">Tipo de socio:</p>
+        <p class="personalDataInfo">Activo (CN)</p>
+      </div>
+      <div class="personalDataContainer">
+        <p class="personalDataTitle">Puntos:</p>
+        <p class="personalDataInfo">9999</p>
+      </div>
     </div>
     <div class="personalActivities">
-        <div class="operationsMenu">
-            <ul class="operationsMenuList">
-                <a href="#"><li class="operationsMenuListItem">MEMBRECÍA</li></a>
-                <a href="#"><li class="operationsMenuListItem">RESERVAS</li></a>
-                <a href="#"><li class="operationsMenuListItem">EVENTOS</li></a>
-                <a href="#"><li class="operationsMenuListItem">PAGOS</li></a>
-                <a href="#"><li class="operationsMenuListItem">RECLAMOS</li></a>
-            </ul>
-        </div>
+      <div class="operationsMenu">
+        <ul class="operationsMenuList">
+          <a href="#"><li class="operationsMenuListItem">MEMBRECÍA</li></a>
+          <a href="#"><li class="operationsMenuListItem">RESERVAS</li></a>
+          <a href="#"><li class="operationsMenuListItem">EVENTOS</li></a>
+          <a href="#"><li class="operationsMenuListItem">PAGOS</li></a>
+          <a href="#"><li class="operationsMenuListItem">SUGERENCIAS</li></a>
+        </ul>
+      </div>
     </div>
     <div class="personalDisplayArea">
-        <p class="welcomeMsg">Bienvenido/a a tu área de gestión de socio/a. Aquí podrás realizar operaciones en relación a tu membrecía, reservar instalaciones, consultar eventos y mucho más. Ante cualquier consulta o reclamo, no dudes en notificarnos.</p>
+      <div class="noTag unselect">
+        <p class="welcomeMsg">
+          Bienvenido/a a tu área de gestión de socio/a. Aquí podrás realizar
+          operaciones en relación a tu membrecía, reservar instalaciones,
+          consultar eventos y mucho más. Ante cualquier consulta o reclamo, no
+          dudes en notificarnos.
+        </p>
+      </div>
+
+      <div class="membrecyTag">
+        <div class="membrecyPersonalInfo">
+          <div>
+            <label for="nombres">Nombres:</label>
+            <h2 class="infoLabel" name="nombres">1erNOMBRE 2doNOMBRE</h2>
+            <label for="apellidos">Apellidos:</label>
+            <h2 class="infoLabel" name="apellidos">1erAPELLIDO 2doAPELLIDO</h2>
+          </div>
+          <div>
+            <label for="tipo">Tipo de socio:</label>
+            <h2 class="infoLabel" name="tipo">Activo (CN)</h2>
+            <label for="cuota">Cuota:</label>
+            <h2 class="infoLabel" name="cuota">$#.###</h2>
+          </div>
+        </div>
+        <div class="nFamiliarTable">
+          <label for="nFamiliar">Nucleo familiar:</label>
+          <table name="nFamiliar" class="familyTable infoLabel">
+            <tr>
+              <th>#</th>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Nro. C.I.</th>
+              <th>F/N</th>
+              <th>Parentezco</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Nombre</td>
+              <td>Apellido</td>
+              <td>#.###.###-#</td>
+              <td>##/##/##</td>
+              <td>Parentezco</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Nombre</td>
+              <td>Apellido</td>
+              <td>#.###.###-#</td>
+              <td>##/##/##</td>
+              <td>Parentezco</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Nombre</td>
+              <td>Apellido</td>
+              <td>#.###.###-#</td>
+              <td>##/##/##</td>
+              <td>Parentezco</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Nombre</td>
+              <td>Apellido</td>
+              <td>#.###.###-#</td>
+              <td>##/##/##</td>
+              <td>Parentezco</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Nombre</td>
+              <td>Apellido</td>
+              <td>#.###.###-#</td>
+              <td>##/##/##</td>
+              <td>Parentezco</td>
+            </tr>
+          </table>
+        </div>
+        <div class="membrecyBtns">
+          <label for="mbcyBtns">Solicitar:</label>
+          <div name="mbcyBtns" class="mbcyBtns">
+            <button class="blueBtn">Modificar datos</button>
+            <button class="blueBtn">Licencia de socio</button>
+            <button class="redBtn">Baja del Club</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="claimsTag unselect">
+        <h2>¿QUÉ PODEMOS MEJORAR?</h2>
+        <form action="">
+          <label for="claim">Área:</label>
+          <select class="claimSelect" name="claim" id="">
+            <option value="otro">Otro</option>
+            <option name="alojamiento">Alojamiento</option>
+            <option value="instalaciones">Instalaciones</option>
+            <option value="personal">Personal</option>
+            <option value="horarios">Horarios</option>
+            <option value="servicios">Servicios</option>
+          </select>
+          <label for="claimText">Ingrese aquí su sugerencia:</label>
+          <textarea
+            class="claimTextarea"
+            name="claimText"
+            placeholder="Procure que su sugerencia sea breve y objetiva para que puedamos mejorar nuestros servicios para todos los socios por igual..."
+          ></textarea>
+          <input type="submit" />
+        </form>
+      </div>
     </div>
-</body>
+  </body>
 </html>

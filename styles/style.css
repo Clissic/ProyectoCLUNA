@@ -11,9 +11,14 @@ a:active {
     text-decoration: none;
 }
 
+.unselect {
+    display: none !important;
+}
+
 .indexBody {
     background-image: url("../img/club-naval-2.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .log-container {
@@ -104,7 +109,7 @@ a:active {
 .interfaceBody {
     display: grid;
     grid-template-columns: 2fr 5fr;
-    grid-template-rows: 2.5fr 10fr;
+    grid-template-rows: 100px 10fr;
     grid-template-areas: 
     "data menu"
     "data act";
@@ -119,9 +124,14 @@ a:active {
     grid-area: data;
     padding: 2vw;
     justify-content: space-evenly;
-    height: 80vh;
+    height: auto;
     background-color: rgb(240, 240, 240);
     border-radius: 15px 0 0 15px;
+}
+
+.personalActivities {
+    background-color: rgb(245, 245, 245);
+    border-radius: 0 15px 0 0;
 }
 
 .personalDataPic {
@@ -143,35 +153,29 @@ a:active {
     font-size: large;
 }
 
-.modifyPersonalDataA {
-    font-size: small;
-    text-align: end;
-    color: black;
-}
-
 .operationsMenu {
+    display: flex;
+    height: 100%;
     position: relative;
     grid-area: menu;
     text-align: center;
-    background-color: rgb(245, 245, 245);
     border-radius: 0 15px 0 0;
 }
 
 .operationsMenuList {
-    width: 100%;
     list-style: none;
-    display: inline-flex;
-    flex-direction: row;
-    margin: 5vh auto 5vh auto;
-    justify-content: space-evenly;
+    margin: auto;
 }
 
 .operationsMenuListItem {
+    width: auto;
+    display: inline-flex;
     cursor: pointer;
     font-weight: 600;
-    padding: 2vh 4vw 2vh 4vw;
+    padding: 2vh 2vw 2vh 2vw;
     color: black;
     border-bottom: solid 2px rgb(245, 245, 245);
+    text-align: center;
 }
 
 .operationsMenuListItem:hover {
@@ -191,7 +195,6 @@ a:active {
 
 .personalDisplayArea {
     display: flex;
-    justify-content: end;
 }
 
 .welcomeMsg {
@@ -200,4 +203,149 @@ a:active {
     text-align: center;
     font-style: italic;
     color: rgb(215, 215, 215);
+}
+
+/* MEMBRECY TAG */
+
+.membrecyTag {
+    width: 100%;
+    padding: 2vw;
+}
+
+.membrecyPersonalInfo {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.familyTable {
+    border-collapse: collapse;
+    border-spacing: none;
+    backdrop-filter: blur(2px);
+}
+
+.familyTable th, .familyTable td {
+    border: 1px solid black;
+    padding: 5px 10px 5px 10px;
+}
+
+.familyTable th {
+    background-color: black;
+    color: white;
+}
+
+.familyTable tr:nth-child(even) {
+    background-color: #00000026;
+}
+
+.infoLabel {
+    margin-bottom: 2vh;
+}
+
+.nFamiliarTable {
+    width: fit-content;
+    margin: 2vh auto 2vh auto;
+}
+
+.membrecyBtns {
+    width: 100%;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.mbcyBtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.mbcyBtns button {
+    width: 25%;
+    margin: 1vh 0 1vh 0;
+}
+
+.blueBtn {
+    height: 3vw;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(0, 0, 215);
+    color: white;
+    cursor: pointer;
+}
+
+.blueBtn:hover {
+    background-color: blue;
+}
+
+.blueBtn:active {
+    background-color: rgb(0, 0, 155);
+}
+
+.redBtn {
+    height: 3vw;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(215, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+
+.redBtn:hover {
+    background-color: red;
+}
+
+.redBtn:active {
+    background-color: rgb(155, 0, 0);
+}
+
+    /* CLAIMS TAG */
+
+.claimsTag {
+    padding: 3vw;
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+    width: 100%;
+    height: 85%;
+    align-content: none;
+}
+
+.claimsTag h2 {
+    height: fit-content;
+    text-align: center;
+}
+
+.claimsTag form {
+    display: flex;
+    flex-direction: column;
+}
+
+.claimSelect {
+    width: fit-content;
+    margin: 5px 0 20px 0;
+}
+
+.claimTextarea {
+    height: 65%;
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    padding: 5px;
+    margin: 5px 0 20px 0;
+}
+
+.claimsTag form input {
+    width: 20%;
+    margin: 0 0 0 80%;
+    height: 3vw;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(0, 0, 215);
+    color: white;
+}
+
+.claimsTag form input:hover {
+    background-color: blue;
+}
+
+.claimsTag form input:active {
+    background-color: rgb(0, 0, 155);
 }
